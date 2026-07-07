@@ -1,4 +1,5 @@
 import br.com.screenmatch.modelos.Filme;
+import br.com.screenmatch.modelos.Serie;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +15,15 @@ public class Main {
         favorito.avalia(6);
         favorito.avalia(9);
 
-        System.out.println(String.format("Média de avaliações: %f", favorito.pegaMedia()));
+        System.out.println(String.format("Média de avaliações: %f \n", favorito.pegaMedia()));
+
+        Serie lost = new Serie();
+
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(10);
+        lost.exibeFichaTecnica();
+
     }
 }
