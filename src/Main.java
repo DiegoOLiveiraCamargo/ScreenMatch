@@ -22,8 +22,10 @@ public class Main {
         lost.setNome("Lost");
         lost.setAnoDeLancamento(2000);
         lost.setTemporadas(10);
+        lost.setMinutosPorEpisodio(50);
         lost.setEpisodiosPorTemporada(10);
         lost.exibeFichaTecnica();
+        System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
     }
 }
