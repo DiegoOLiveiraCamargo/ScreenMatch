@@ -1,5 +1,7 @@
 package br.com.screenmatch.modelos;
 
+import br.com.screenmatch.calculos.Classificavel;
+
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
